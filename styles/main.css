@@ -3,6 +3,11 @@
     src: url(../resources/fonts/segoeui.woff2);
 }
 
+@font-face {
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    src: url(../resources/fonts/segoeuib.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +18,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(../resources/wallpapers/abstract-wallpapers/bg-7.jpg);
+    background-image: url(../resources/wallpapers/abstract-wallpapers/bg-1.jpg);
     object-fit: contain;
     overflow: hidden;
 }
@@ -25,6 +30,27 @@ body {
 
 .width-24 {
     width: 20px;
+}
+
+/* DESKTOP */
+/* time */
+#desktop-time-and-date {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#desktop-time {
+    color: white;
+    font-size: 96px;
+    font-weight: 600;
+}
+
+#desktop-date {
+    color: white;
+    font-size: 24px;
 }
 
 /* BOTTOM NAV DESKTOP */
