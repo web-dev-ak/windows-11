@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    src: url(../resources/fonts/segoeui.woff2);
-}
-
-@font-face {
-    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
-    src: url(../resources/fonts/segoeuib.woff2);
-}
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4?styles=18006,18004');
 
 * {
     margin: 0;
@@ -45,7 +37,7 @@ body {
 #desktop-time {
     color: white;
     font-size: 96px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #desktop-date {
