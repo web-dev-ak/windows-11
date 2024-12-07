@@ -11,7 +11,9 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url(../resources/wallpapers/abstract-wallpapers/bg-1.jpg);
-    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -20,8 +22,12 @@ body {
     color: white;
 }
 
-.width-24 {
+.width-20 {
     width: 20px;
+}
+
+.width-24 {
+    width: 24px;
 }
 
 /* DESKTOP */
@@ -37,7 +43,6 @@ body {
 #desktop-time {
     color: white;
     font-size: 96px;
-    font-weight: 700;
 }
 
 #desktop-date {
@@ -163,4 +168,37 @@ body {
 .weather-info-temp, .weather-info-day {
     color: white;
     font-size: 14px;
+}
+
+@media (width <= 1080px) {
+    #bottom-nav-desktop {
+        width: 48px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #btm-nav-dsktp-menu-items {
+        flex-direction: column;
+    }
+
+    #btm-nav-dsktp-system-info {
+        display: none;
+    }
+
+    #btm-nav-dsktp-weather-right{
+        display: none;
+    }
+}
+
+@media (width <= 768px) {
+    #desktop-time {
+        font-size: 72px;
+    }
+    
+    #desktop-date {
+        font-size: 20px;
+    }
 }
