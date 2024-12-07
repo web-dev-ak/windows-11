@@ -1,4 +1,5 @@
-import { updateTimeWithSeconds, updateTimeWithoutSeconds } from "./timeDate.js";
+import { updateTimeWithSeconds, updateTimeWithoutSeconds, } from "./timeDate.js";
+import { getDateInDDMMYYYY, getDateInLongFormat } from "./timeDate.js";
 
 function updateTaskbarTime() {
     const timeTaskBar = document.getElementById('sys-info-time');
@@ -17,3 +18,11 @@ setInterval(() => {
 
 updateTaskbarTime();
 updateDesktopTime();
+
+
+const shortDateElement = document.getElementById('sys-info-date');
+const longDateElement = document.getElementById('desktop-date');
+
+// Example usage
+shortDateElement.textContent = getDateInDDMMYYYY(); // Outputs: 07-12-2024
+longDateElement.textContent = getDateInLongFormat(); // Outputs: Saturday, 7 December
