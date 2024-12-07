@@ -15,6 +15,6 @@ export function updateTimeWithoutSeconds() {
     return `${hours}:${minutes}`;
 }
 
-// export function updateDate() {
-
-// }
+export function updateDate() {
+    const date = new Date();
+}
