@@ -71,10 +71,11 @@ body {
 /* system info */
 #btm-nav-dsktp-system-info {
     display: flex;
-    gap: 0px;
 }
 
-.sys-info-caret-box, .sys-info-basic-info-box, .sys-info-date-notification-box {
+.sys-info-caret-box,
+.sys-info-basic-info-box,
+.sys-info-date-notification-box {
     width: auto;
     height: 40px;
     cursor: pointer;
@@ -107,7 +108,8 @@ body {
     align-items: end;
 }
 
-#sys-info-date, #sys-info-time {
+#sys-info-date,
+#sys-info-time {
     font-size: 12px;
 }
 
@@ -165,12 +167,13 @@ body {
     width: 32px;
 }
 
-.weather-info-temp, .weather-info-day {
+.weather-info-temp,
+.weather-info-day {
     color: white;
     font-size: 14px;
 }
 
-@media (width <= 1080px) {
+@media (width <=1080px) {
     #bottom-nav-desktop {
         width: 48px;
         height: 100%;
@@ -184,21 +187,59 @@ body {
         flex-direction: column;
     }
 
-    #btm-nav-dsktp-system-info {
+    #btm-nav-dsktp-weather-right {
         display: none;
     }
 
-    #btm-nav-dsktp-weather-right{
-        display: none;
+    #btm-nav-dsktp-system-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(94.5vw, 10px);
+        z-index: 100;
+        padding: 10px;
+        border-radius: 100px;
+        width: 259px;
+
+        backdrop-filter: blur(16px) saturate(200%);
+        -webkit-backdrop-filter: blur(16px) saturate(200%);
+        background-color: rgba(17, 25, 40, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .sys-info-caret-box {
+        width: 40px;
+    }
+
+    .sys-info-caret-box,
+    .sys-info-basic-info-box,
+    .sys-info-date-notification-box {
+        border-radius: 100px;
     }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
     #desktop-time {
         font-size: 72px;
     }
-    
+
     #desktop-date {
         font-size: 20px;
+    }
+
+    #btm-nav-dsktp-system-info {
+        transform: translate(92.5vw, 10px);
+    }
+}
+
+@media (width <=425px) {
+    #btm-nav-dsktp-system-info {
+        transform: translate(86vw, 10px);
+    }
+}
+
+@media (width <=320px) {
+    #btm-nav-dsktp-system-info {
+        transform: translate(83vw, 10px);
     }
 }
