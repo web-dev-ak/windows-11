@@ -1,0 +1,123 @@
+/* BOTTOM NAV DESKTOP */
+#bottom-nav-desktop {
+    width: 100%;
+    height: 48px;
+    padding: 5px 15px 5px 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* system info */
+#btm-nav-dsktp-system-info {
+    display: flex;
+}
+
+.sys-info-caret-box,
+.sys-info-basic-info-box,
+.sys-info-date-notification-box {
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    gap: 5px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.10);
+        transition: ease-in 100ms;
+    }
+}
+
+.sys-info-caret-box {
+    padding: 0px 5px;
+}
+
+.sys-info-notification-icon-box {
+    display: grid;
+    place-content: center;
+    gap: 10px;
+}
+
+.sys-info-date-and-time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#sys-info-date,
+#sys-info-time {
+    font-size: 12px;
+}
+
+
+#btm-nav-dsktp-menu-items {
+    display: flex;
+    gap: 5px;
+}
+
+.menu-items {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.10);
+        transition: ease-in 100ms;
+    }
+}
+
+.menu-items-icons {
+    width: 32px;
+}
+
+/* weather */
+#btm-nav-dsktp-weather-right {
+    width: auto;
+    height: 40px;
+    display: flex;
+    gap: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.10);
+        transition: ease-in 100ms;
+    }
+}
+
+.weather-sun-icon-box {
+    display: grid;
+    place-content: center;
+}
+
+.weather-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-sun-icon {
+    width: 32px;
+}
+
+.weather-info-temp,
+.weather-info-day {
+    color: white;
+    font-size: 14px;
+}
